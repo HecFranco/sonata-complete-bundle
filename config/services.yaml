@@ -9,6 +9,7 @@ parameters:
     mailer_user: 'admin@admin.com'
 
 imports: 
+    - { resource: 'sonata/services.yaml'}        
     - { resource: 'sonata/sonata_admin.yaml'}    
     - { resource: 'sonata/sonata_classification.yaml'}    
     - { resource: 'sonata/sonata_core.yaml'}    

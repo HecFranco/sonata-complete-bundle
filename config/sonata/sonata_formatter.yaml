@@ -1,4 +1,9 @@
+imports: 
+    # FOSCKEditor
+    - { resource: '../packages/fos_ck_editor.yaml' }   
+
 sonata_formatter:
+
     default_formatter: text
     formatters:
         markdown:
@@ -33,3 +38,5 @@ sonata_formatter:
         templates:
             browser: '@SonataFormatter/Ckeditor/browser.html.twig'
             upload: '@SonataFormatter/Ckeditor/upload.html.twig'
+
+         
