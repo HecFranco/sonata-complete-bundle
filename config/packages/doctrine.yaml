@@ -11,7 +11,7 @@ doctrine:
         url: '%env(resolve:DATABASE_URL)%'
         types:
             json: Sonata\Doctrine\Types\JsonType        
-    orm:
+    #orm:
         #auto_generate_proxy_classes: true
         #naming_strategy: doctrine.orm.naming_strategy.underscore
         #auto_mapping: true
@@ -26,9 +26,10 @@ doctrine:
         entity_managers:
             default:
                 mappings:        
-                    #SonataUserBundle: ~
-                    #FOSUserBundle: ~
-                    #ApplicationSonataUserBundle: ~                    
-                    #ApplicationSonataClassificationBundle: ~     
+                    SonataUserBundle: ~
+                    FOSUserBundle: ~
+                    ApplicationSonataUserBundle: ~   
+                    SonataClassificationBundle: ~                 
+                    ApplicationSonataClassificationBundle: ~     
                     ApplicationSonataMediaBundle: ~
                     SonataMediaBundle: ~                               

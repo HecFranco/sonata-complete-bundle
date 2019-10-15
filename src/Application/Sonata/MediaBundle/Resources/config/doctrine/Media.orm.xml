@@ -16,6 +16,11 @@
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>
-
+        <many-to-one
+            field="category"
+            target-entity="App\Application\Sonata\ClassificationBundle\Entity\Category"
+            inversed-by="products">
+            <join-column nullable="false"/>
+        </many-to-one>
     </entity>
 </doctrine-mapping>
