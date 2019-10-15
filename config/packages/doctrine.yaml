@@ -22,13 +22,15 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
+            ApplicationSonataUserBundle: ~                 
             SonataUserBundle: ~
             FOSUserBundle: ~
-            ApplicationSonataUserBundle: ~   
-            SonataClassificationBundle: ~                 
-            ApplicationSonataClassificationBundle: ~     
+            ApplicationSonataClassificationBundle: ~   
+            SonataClassificationBundle: ~    
             ApplicationSonataMediaBundle: ~
             SonataMediaBundle: ~ 
+            ApplicationSonataNewsBundle: ~
+            SonataNewsBundle: ~            
     #orm:
         #entity_managers:
         #    default:
